@@ -15,13 +15,15 @@ public class Vowels {
 
     public static void main(String[] args, String sentence) {
         vowelCounter count=new vowelCounter();
-         Scanner scanner = new Scanner(System.in); // Create a scanner object for user input
+        // Create a scanner object for user
+         Scanner scanner = new Scanner(System.in); 
 
-        System.out.print("Enter a sentence: "); // Prompt the user for input
-        String sentences = scanner.nextLine(); // Read the input sentence
+          // Prompt the user for sentences
+        System.out.print("Enter a sentence: "); 
+        String sentences = scanner.nextLine();
        
 
-        int numberOfVowels = count.countVowels(sentences); // Call the countVowels method
-        System.out.println("Number of vowels: " + numberOfVowels); // Output the result
+        int numberOfVowels = count.countVowels(sentences);
+        System.out.println("Number of vowels: " + numberOfVowels);
     }
 }
